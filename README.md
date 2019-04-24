@@ -24,7 +24,7 @@ From Core i7 Macbook Pro (2014). Ruby 2.5.3
 ```
 
 ### Requirements
-* Ruby 2.0+
+* Ruby 2.2+
 * gcc/clang
 
 ### Developing
