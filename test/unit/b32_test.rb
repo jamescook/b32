@@ -33,14 +33,4 @@ describe 'B32' do
       assert_equal str, B32.decode(encoded)
     end
   end
-
-  describe ".decode32 given an invalid base32 string" do
-    it "raises an error" do
-      skip("TODO")
-      str = "I am not base32 encoded"
-      assert_raises B32::DecodeError do
-         B32.decode(str)
-      end
-    end
-  end
 end
