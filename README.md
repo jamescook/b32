@@ -1,6 +1,6 @@
 # Base32 Encoder/Decoder
 
----
+![Travis Build](https://travis-ci.com/jamescook/soundx.svg?branch=master)
 
 B32 is a Ruby native extension that wraps the base32 library found
 in [tpmtotop](https://github.com/mjg59/tpmtotp/blob/master/base32.h)
