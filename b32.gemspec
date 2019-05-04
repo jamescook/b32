@@ -1,6 +1,8 @@
+require_relative "./lib/b32/version"
+
 Gem::Specification.new do |s|
   s.name    = "b32"
-  s.version = "1.0.0"
+  s.version = B32::VERSION
   s.summary = "Base32 Ruby C Extension"
   s.author  = "James Cook"
   s.platform = Gem::Platform::RUBY
