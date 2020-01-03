@@ -13,7 +13,7 @@ describe 'B32' do
   describe ".encode32 given a non-string" do
     it "returns a type error" do
       assert_raises TypeError do
-        B32.encode -1
+        B32.encode(-1)
       end
     end
   end
