@@ -20,7 +20,7 @@ b32_encode(int argc, VALUE* argv, VALUE self)
     rb_raise(rb_eTypeError, "expected a String");
   }
 
-  src = (unsigned char*) StringValueCStr(input);
+  src = (unsigned char*) StringValuePtr(input);
   srclen = BASE32_LEN(RSTRING_LEN(input));
 
   unsigned char dest[srclen];
@@ -41,7 +41,7 @@ b32_decode(int argc, VALUE *argv, VALUE self)
     rb_raise(rb_eTypeError, "expected a String");
   }
 
-  src = (unsigned char*) StringValueCStr(input);
+  src = (unsigned char*) StringValuePtr(input);
   input_len = RSTRING_LEN(input);
   estimate_len = UNBASE32_LEN(input_len);
   unsigned char out[estimate_len];
